@@ -29,7 +29,7 @@ const UserModel = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          isEmail: true
+          isUrl: true
         }
       },
       status: {
