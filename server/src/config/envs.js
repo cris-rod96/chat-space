@@ -1,3 +1,3 @@
 import 'dotenv/config'
 
-export const { POSTGRES_URI } = process.env
+export const { POSTGRES_URI, SECRET_KEY } = process.env
