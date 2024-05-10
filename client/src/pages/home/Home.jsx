@@ -8,6 +8,7 @@ import chatSVG from '/chat_image.svg'
 
 const Home = () => {
   const user = {
+    id: 'afna',
     name: 'Eve Davis',
     email: 'eve@example.com',
     password: 'zxcvb',
@@ -15,6 +16,68 @@ const Home = () => {
       'https://reductress.com/wp-content/uploads/2019/06/petite-woman-1-820x500.jpg',
     status: true
   }
+
+  const messages = [
+    {
+      id: '123',
+      content: 'Hola, ¿Cómo estás?',
+      UserSendId: 'afna'
+    },
+    {
+      id: '345',
+      content: '¡Hola! Estoy bien, ¿Y tú?',
+      UserSendId: 'rezna'
+    },
+    {
+      id: '567',
+      content: 'Estoy bien también, gracias por preguntar.',
+      UserSendId: 'afna'
+    },
+    {
+      id: '789',
+      content: '¿Qué has estado haciendo últimamente?',
+      UserSendId: 'afna'
+    },
+    {
+      id: '901',
+      content:
+        'He estado ocupada con el trabajo y también he estado leyendo mucho. ¿Y tú?',
+      UserSendId: 'rezna'
+    },
+    {
+      id: '234',
+      content:
+        '¡Vaya! Suena interesante. Yo he estado trabajando en un proyecto personal y también he estado saliendo más a caminar.',
+      UserSendId: 'afna'
+    },
+    {
+      id: '456',
+      content: 'Eso suena genial. ¿En qué consiste tu proyecto personal?',
+      UserSendId: 'rezna'
+    },
+    {
+      id: '678',
+      content:
+        'Es un proyecto de arte digital. Estoy explorando diferentes estilos y técnicas.',
+      UserSendId: 'afna'
+    },
+    {
+      id: '910',
+      content: '¡Eso suena emocionante! ¿Puedo ver algo de tu trabajo?',
+      UserSendId: 'rezna'
+    },
+    {
+      id: '111',
+      content: 'Claro, ¡te enviaré algunas muestras pronto!',
+      UserSendId: 'afna'
+    },
+    {
+      id: '222',
+      content: '¡Estoy deseando verlo!',
+      UserSendId: 'rezna'
+    }
+  ]
+
   return (
     <main className="w-full h-screen overflow-hidden">
       <Sidebar />
@@ -54,87 +117,26 @@ const Home = () => {
             </div>
           </header>
           {/* Chat */}
-          <div className="my-[90px] h-full w-full px-10 mx-auto overflow-y-auto flex flex-col gap-2">
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-            <div className="flex justify-end">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-600 ">
-                <p className="">Hola</p>
-              </div>
-            </div>
-
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
-            <div className="flex justify-start">
-              <div className="pl-2 pr-7 py-3 border border-gray-500/20 w-max rounded-lg bg-gray-800 ">
-                <p className="">Hola, ¿Cómo estas?</p>
-              </div>
-            </div>
+          <div className="my-[90px] h-full w-full px-10 mx-auto overflow-y-auto flex flex-col gap-4">
+            {messages.map((message) => {
+              if (message.UserSendId === user.id) {
+                return (
+                  <div className="flex justify-end " key={message.id}>
+                    <div className="pl-2 pr-7 py-3 border border-gray-500/20 max-w-xl rounded-lg bg-gray-600 ">
+                      <p className="">{message.content}</p>
+                    </div>
+                  </div>
+                )
+              } else {
+                return (
+                  <div className="flex justify-start" key={message.id}>
+                    <div className="pl-2 pr-7 py-3 border border-gray-500/20 max-w-xl rounded-lg bg-gray-800 ">
+                      <p className="">{message.content}</p>
+                    </div>
+                  </div>
+                )
+              }
+            })}
           </div>
           {/* Footer */}
           <footer className="absolute bottom-0 h-20 bg-gray-500/10 w-full px-5 py-2 flex items-center">
